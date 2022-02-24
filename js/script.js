@@ -1,9 +1,11 @@
+let punteggioGiacomo = 0;
+let punteggioMacchina = 0;
+
+
 function lanciaDadi() {
 
         let randomNumber1 = Math.floor(Math.random() * 6) + 1;
         let randomNumber2 = Math.floor(Math.random() * 6) + 1;
-        let punteggioGiacomo = 0;
-        let punteggioMacchina = 0;
 
         document.querySelector(".img1").setAttribute("src",
             "img/dice" + randomNumber1 + ".png");
