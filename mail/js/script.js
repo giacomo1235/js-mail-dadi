@@ -1,5 +1,4 @@
 let btnCerca = document.getElementById('cerca');
-let btnAzzera = document.getElementById('azzera')
 
 btnCerca.addEventListener ('click', function() {
     let userMail = document.getElementById('inputMail').value;
@@ -13,8 +12,4 @@ btnCerca.addEventListener ('click', function() {
         alert("ok! La mail è giusta")
     }
     };
-});
-
-btnAzzera.addEventListener ('click', function() {
-    userMail = '';
 });
