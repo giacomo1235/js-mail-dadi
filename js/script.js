@@ -17,13 +17,13 @@ function lanciaDadi() {
 
         else if (randomNumber1 < randomNumber2) {
             document.querySelector("h1").innerHTML = "Che Sfiga!";
-            punteggioMacchina+= 1;
+            punteggioMacchina++;
         }
 
         else {
             document.querySelector("h1").innerHTML = "Sono il Migliore!";
-            punteggioGiacomo+=1;
+            punteggioGiacomo++;
         }
         document.getElementById("pg").innerHTML = punteggioGiacomo;
         document.getElementById("pm").innerHTML = punteggioMacchina;
-}
+};
