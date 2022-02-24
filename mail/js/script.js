@@ -1,5 +1,7 @@
+let btnCerca = document.getElementById('cerca');
+let btnAzzera = document.getElementById('azzera')
 
-function verificaMail() {
+btnCerca.addEventListener ('click', function() {
     let userMail = document.getElementById('inputMail').value;
     
     const forbiddenMail = ["pietro.pacciani@gmail.com", "annamaria.franzoni@live.it", "amanda.knox@yahoo.us", "leonardacianciulli@live.com","andreadipre@gmail.com"];
@@ -11,4 +13,8 @@ function verificaMail() {
         alert("ok! La mail è giusta")
     }
     };
-};
+});
+
+btnAzzera.addEventListener ('click', function() {
+    userMail = '';
+});
