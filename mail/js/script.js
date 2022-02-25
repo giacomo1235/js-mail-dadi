@@ -1,6 +1,7 @@
 const forbiddenMail = ["pietro.pacciani@gmail.com", "annamaria.franzoni@live.it", "amanda.knox@yahoo.us", "leonardacianciulli@live.com","andreadipre@gmail.com"];
 let btnCerca = document.getElementById('cerca');
 const userMail = document.getElementById('inputMail').value;
+const eleOutput = document.getElementById('testo');
 
 btnCerca.addEventListener ('click', function() {    
     let found = false;
@@ -11,8 +12,8 @@ btnCerca.addEventListener ('click', function() {
     };
     
     if (found) {
-        console.log('trovato')
+        eleOutput.innerHTML = 'indirizzo trovato'
     } else {
-        console.log(' non trovato')
+        eleOutput.innerHTML = 'indirizzo non trovato'
     }
 });
