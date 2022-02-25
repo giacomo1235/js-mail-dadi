@@ -8,12 +8,12 @@ const forbiddenMail = [
 
 let btnCerca = document.getElementById('cerca');
 
-const userMail = document.getElementById('inputMail').value;
-
 const eleOutput = document.getElementById('testo');
 
 btnCerca.addEventListener ('click', function() {    
     
+    const userMail = document.getElementById('inputMail').value;
+
     let found = false;
 
     for (let i = 0; i < forbiddenMail.length; i++){
@@ -26,5 +26,5 @@ btnCerca.addEventListener ('click', function() {
         eleOutput.innerHTML = 'indirizzo trovato'
     } else {
         eleOutput.innerHTML = 'indirizzo non trovato'
-    }
+    }   
 });
